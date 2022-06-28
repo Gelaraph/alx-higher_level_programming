@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for letter in range(26):
-    if letter != 4 and letter != 16:
-        print("{:s}".format(chr(letter + ord("a"))), end="")
+for character in range(97, 123):
+    if (character != 101 and character != 113):
+        print("{:c}".format(character), end='')

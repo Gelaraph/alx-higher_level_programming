@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-num = 0
-while num <= 89:
-    if num % 10 == 0:
-        num += 1 + num // 10
-    print("{:02d}".format(num), end='\n' if num == 89 else ", ")
-    num += 1
+for number in range(100):
+    if int(number / 10) != number % 10 and int(number / 10) < number % 10:
+        print("{}{}".format(int(number / 10), number % 10), end="")
+        if (number != 89):
+            print(", ", end="")
+print("")
